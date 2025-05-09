@@ -1,46 +1,47 @@
-# React Company Landing Page
+# Responsive Landing Page with React
 
-A responsive landing page built with **React** that includes:
-- A navigation bar with a logo, menu items, and a login button.
-- A full-width hero section with background image, centered heading, and a search bar.
-- A feature/card section with three content blocks.
+This project is a responsive landing page built using **React**. It includes a fixed navbar, a hero section with a background image, a search bar, and a grid of cards—each displaying a different image and description.
 
----
+## Features
 
-## ✨ Features
+- Responsive navbar with menu links and login button
+- Full-width hero section with title and background image
+- Search bar centered in the hero section (non-functional demo)
+- Grid layout of cards with unique images and descriptions
+- Fully responsive for desktop and mobile view
 
-- **Responsive Navbar**  
-  Includes a circular logo, company name, menu links (Menu 1–3), and a login button.
+## Project Structure
 
-- **Backround  image Section**  
-  - Full-width background image    
-  - Search input with button (non-functional placeholder)
+src/
+├── assets/
+├── components/
+│ ├── cards/
+│ │ ├── Card.css
+│ │ └── Card.jsx
+│ ├── content/
+│ │ ├── Home.css
+│ │ └── Home.jsx
+│ └── navbar/
+│ ├── Navbar.module.css
+│ └── Navbar.jsx
+├── images/
+│ ├── hero.jpg
+│ ├── image1.jpg
+│ ├── image2.jpg
+│ └── image3.jpg
+├── App.css
+├── App.jsx
+└── main.jsx
 
-- **Card Section**  
-  - 3 feature cards  
-  - Each contains an image placeholder, heading, and subheading
 
----
+## Mobile Responsiveness
 
-## 🛠 Tech Stack
+- Uses media queries and responsive flex/grid layout.
+- Elements stack and center on small screens.
+- Cards have adjusted margins/padding for mobile view.
+
+## Technologies used
 
 - React
-- CSS (Flexbox layout)
-- Google Fonts (optional)
-
----
-
-## 📁 Project Structure
-
-/public
-└── hero.jpg # Background image for hero section
-/src
-├── components
-│ ├── navbar
-│ │ ├── Navbar.jsx
-│ │ └── Navbar.css
-│ └── content
-│ ├── Home.jsx
-│ └── Home.css
-├── App.jsx
-└── App.css
+- Css
+- Jsx

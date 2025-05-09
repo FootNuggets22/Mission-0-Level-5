@@ -1,0 +1,67 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #000435;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.companyName {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbarMenu {
+  display: flex;
+  gap: 24px;
+}
+
+.navbarMenu a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbarMenu a:hover {
+  color: gray;
+}
+
+.loginButton {
+  font-size: 14px;
+  padding: 4px 12px;
+  border: 1px solid #aaa;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: gray;
+}

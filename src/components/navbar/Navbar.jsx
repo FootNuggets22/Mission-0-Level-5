@@ -1,23 +1,29 @@
-import React from "react";
-import Styles from "./Navbar.module.css";
-import notRick from "../../images/missionReadyPhoto.gif";
+import React, { useState } from 'react';
+import styles from './Navbar.module.css';
+import logo from '../../images/magic.gif';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <nav className={Styles.navbar}>
-      <div className={Styles.navbarLeft}>
-        <div className={Styles.logo} />
-        <span className={Styles.companyName}>My Company</span>
+    <nav className={styles.navbar}>
+      <div className={styles.logoContainer}>
+        <img src={logo} alt="My Company" className={styles.logo} />
+        <span>My Company</span>
       </div>
 
-      <div className={Styles.navbarRight}>
-        <div className={Styles.navbarMenu}>
-          <a href="#">Menu 1</a>
-          <a href="#">Menu 2</a>
-          <a href="#">Menu 3</a>
-        </div>
-        <button className={Styles.loginButton}>Login</button>
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        ☰
       </div>
+
+      <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
+        <li><button className={styles.button}>Menu 1</button></li>
+        <li><button className={styles.button}>Menu 2</button></li>
+        <li><button className={styles.button}>Menu 3</button></li>
+        <li><button className={styles.login}>Login</button></li>
+      </ul>
     </nav>
   );
 };

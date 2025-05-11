@@ -5,7 +5,7 @@ import './Home.css';
 // Import images from src/images
 import heroImage from '../../images/tech backround.jpg';
 import image1 from '../../images/hero.jpg';
-import image2 from '../../images/missionReadyPhoto.gif';
+import image2 from '../../images/magic.gif';
 import image3 from '../../images/statisticThing.jpg';
 
 function Home() {
